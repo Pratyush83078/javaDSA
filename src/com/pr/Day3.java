@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Day3 {
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
-        // 1
+        // 1 ----------Sum and multiple of digits---------------
         // int n= inp.nextInt(), mul=1, sum=0;
         // while (n>0){
         // mul *=n%10;
@@ -35,20 +35,20 @@ public class Day3 {
         // }
 
         // 3 ----------inverting number;---------------
-        while (true) {
-            System.out.print("write some num: (or press between 0 to 9)  :>");
-            int n = inp.nextInt(), inverted = n % 10;
-            if (n >= 0 && n <= 10) {
-                System.out.println("exited successfully: press ctrl+backspace ctrl+backspace to relaunch");
-                inverted = 404;
-            }
-            n = n / 10;
-            while (n > 0) {
-                inverted = inverted * 10 + (n % 10);
-                n /= 10;
-            }
-            System.out.println(inverted);
-        }
+        // while (true) {
+        //     System.out.print("write some num: (or press between 0 to 9)  :>");
+        //     int n = inp.nextInt(), inverted = n % 10;
+        //     if (n >= 0 && n <= 10) {
+        //         System.out.println("exited successfully: press ctrl+backspace ctrl+backspace to relaunch");
+        //         inverted = 404;
+        //     }
+        //     n = n / 10;
+        //     while (n > 0) {
+        //         inverted = inverted * 10 + (n % 10);
+        //         n /= 10;
+        //     }
+        //     System.out.println(inverted);
+        // }
 
     }
 }
