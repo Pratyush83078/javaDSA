@@ -1,6 +1,6 @@
 package com.pr;
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class firstP {
     public static void main(String[] args) {

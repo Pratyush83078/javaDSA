@@ -35,20 +35,22 @@ public class Day3 {
         // }
 
         // 3 ----------inverting number;---------------
-        // while (true) {
-        //     System.out.print("write some num: (or press between 0 to 9)  :>");
-        //     int n = inp.nextInt(), inverted = n % 10;
-        //     if (n >= 0 && n <= 10) {
-        //         System.out.println("exited successfully: press ctrl+backspace ctrl+backspace to relaunch");
-        //         inverted = 404;
-        //     }
-        //     n = n / 10;
-        //     while (n > 0) {
-        //         inverted = inverted * 10 + (n % 10);
-        //         n /= 10;
-        //     }
-        //     System.out.println(inverted);
-        // }
+        while (true) {
+            System.out.print("write some num: (or press between 0 to 9)  :>");
+            int n = inp.nextInt(), inverted = n % 10;
+            if (n >= 0 && n <= 10) {
+                System.out.println("exited successfully: press ctrl+backspace ctrl+backspace to relaunch");
+                inverted = 404;
+                //close the input scanner; to prevent from resource leak;
+                inp.close();
+            }
+            n = n / 10;
+            while (n > 0) {
+                inverted = inverted * 10 + (n % 10);
+                n /= 10;
+            }
+            System.out.println(inverted);
+        }
 
     }
 }
