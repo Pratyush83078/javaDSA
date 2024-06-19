@@ -17,7 +17,7 @@ public class Day2 {
         // } else {
         // System.out.println("Georgian calender was not formed");
         // }
- 
+  
         // 2 ---------------- fibonacci series ---------------
         byte a = 0;
         byte b = 1;
